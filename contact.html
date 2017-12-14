@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patrick J. O'Donnel | Contact</title>
+    <meta name="description" content="Patrick J. O'Donnel | Contact Information"/>
+    <link rel="shortcut icon" href="icons/favicon_resume_blue.ico" type="image/x-icon">
+
+     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:200,400,700|Libre+Baskerville:400,400i" rel="stylesheet">
+    
+    <!-- FOR MENU & ICONS -->
+    <link rel="stylesheet" href="./css/layout-and-menu.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- FOR MAP -->
+    <link rel="stylesheet" href="./css/map.css"/>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    
+
+</head>
+<body class="scroll">
+
+	<!-- HEADER -->
+    <div class="rows row0" id="header">
+    	
+	    	<div class="columns col0" id="r0-c0">
+	    			<div id="blue_border"></div>
+	    	</div>
+
+	    	<div class="columns col1" id="r0-c1">	
+	    			<h1 class><a href="work.html">Patrick J. O'Donnel</a></h1>
+	    	</div>
+    	
+    </div>
+
+
+
+    <!-- NAVIGATION -->
+    <div class="rows row1" id="navtitle">
+    	<div class="columns col0" id="r1-c0">
+
+	    		<!-- ICONS -->
+	    		<div class="stack0 s0-0" id="c0-s00">
+			    		<div class="menu_icon" id="work_div" data-information="work">
+			    			<a href="work.html"> 
+			    				<img src="icons/menu_icon_work.png" class="icon_png clickable" id="work"></img>
+			    			</a>
+			    		</div>
+
+			    		<div class="menu_icon" id="resume_div" data-information="resume">
+			    			<a href="base files/odonnel_resume.pdf" download> 
+			    				<img src="icons/menu_icon_resume.png" class="icon_png clickable" id="resume"></img>
+			    			</a>
+			    		</div>
+
+			    		<div class="menu_icon" id="process_div" data-information="process">
+			    			<a href="process.html"> 
+			    				<img src="icons/menu_icon_process.png" class="icon_png clickable" id="process"></img>
+			    			</a>
+			    		</div>
+
+			    		<div class="menu_icon" id="contact_div" data-information="contact">
+			    			<a href="contact.html"> 
+			    				<img src="icons/menu_icon_contact select.png" class="icon_png clickable" id="contact"></img>
+			    			</a>
+			    		</div>
+
+			    		<div class="menu_icon" id="about_div" data-information="about" >
+			    			<a href="about.html"> 
+			    				<img src="icons/menu_icon_about.png" class="icon_png clickable" id="about" ></img>
+			    			</a>
+			    		</div>
+			    </div>
+
+			    <div class="stack0 s0-1" id="c0-s01">
+	    		
+					<div class='placeholder'>
+			 			<div class="menu_under menu_unselected" id="mu_work" data-information="work">
+			 				<h4>Selected Works</h4>
+			 			</div>
+		 			</div>
+		 			<div class='placeholder'>
+			    		<div class="menu_under menu_unselected" id="mu_resume" data-information="resume">
+			    			<h4>R&Eacute;sum&Eacute; Download</h4> 
+			    		</div>
+		    		</div>
+		 			<div class='placeholder'>
+			    		<div class="menu_under menu_unselected" id="mu_process" data-information="process">
+			    			<h4>Process Journal</h4> 
+			    		</div>
+			    	</div>
+		 			<div class='placeholder'>
+			    		<div class="menu_under menu_selected" id="mu_contact" data-information="contact">
+			    			<h4>Contact Information</h4> 
+			    		</div>
+			    	</div>
+		 			<div class='placeholder'>
+			    		<div class="menu_under menu_unselected" id="mu_about" data-information="about">
+			    			<h4>About Patrick</h4> 
+			    		</div>
+		    		</div>
+	    		</div> 
+
+    	</div>
+    	<div class="columns col1" id="r1-c1">
+
+    			<div class="stack0 s0-0" id="c1-s00">
+    					<h2 class="clickable additive-titles" id="page_title"  data-filter="all"></h2>
+    					<h3 class="clickable additive-titles" id='filter_title'></h3>
+    			</div>
+
+	    		
+		</div>
+    	
+    </div>    
+
+
+    <div class="rows row2" id="content">
+	    	<div class="columns col1 filtr-container" id="r2-c1">
+
+		    		
+					<!-- <h6 class="no_marg">Email, preferred contact</h6> -->
+					<p class="non-break">For all inquiries, please use the following email:</p>
+					<p><a class="copy" title="select email address"value="p.j.odonnel@gmail.com">p.j.odonnel@gmail.com</a></p>
+
+					<p>For summary of professional work, please use the following:</p>
+					
+					<div class="blue_left icon_blue_left" data-information="resume">
+						<div class="icon_button" data-information="resume">
+		    				<a href="base files/odonnel_resume.pdf" download> 
+		    					<img src="icons/menu_icon_resume.svg" class="icon_svg clickable" id="resume_button"></img>
+		    				</a>
+		    			</div>
+		    			<a href="base files/odonnel_resume.pdf" download> 
+		    				<h6 class="inline_icon" id="resume_buttontitle" title="download pdf resume">Download Resume</h6>
+		    			</a>
+					</div>
+					
+					<p>LinkedIn, user <a href="https://www.linkedin.com/in/pjodonnel" title="linkedIn profile">pjodonnel</a></p>
+
+					<h5>Locations</h5>
+					<div class="map_boundary"></div>
+
+	    	</div>
+    </div>
+	
+<!-- SCRIPTS -->
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/map.js"></script>
+<!-- <script type="text/javascript" src="js/photomatrix.js"></script>
+<script type="text/javascript" src="js/filterizer_.js"></script> -->
+
+	
+
+</body>
+</html>

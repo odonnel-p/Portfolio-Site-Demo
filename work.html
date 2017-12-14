@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patrick J. O'Donnel | Portfolio</title>
+    <meta name="description" content="Patrick J. O'Donnel | Designer | Artist | Instructor"/>
+    <link rel="shortcut icon" href="icons/favicon_resume_blue.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:200,400,700|Libre+Baskerville:400,400i" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/layout-and-menu.css"/>
+    <link rel="stylesheet" href="./css/projects.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="lib/jquery.filterizr.min.js"></script>
+
+
+</head>
+<body class="scroll">
+
+
+
+	<!-- HEADER -->
+    <div class="rows row0" id="header">
+    	
+	    	<div class="columns col0" id="r0-c0">
+	    			<div id="blue_border"></div>
+	    	</div>
+
+	    	<div class="columns col1" id="r0-c1">	
+	    			<h1 class><a href="work.html">Patrick J. O'Donnel</a></h1>
+	    	</div>
+    	
+    </div>
+
+
+
+
+    <!-- NAVIGATION -->
+    <div class="rows row1" id="navtitle">
+    	<div class="columns col0" id="r1-c0">
+
+	    		<!-- ICONS -->
+	    		<div class="stack0 s0-0" id="c0-s00">
+			    		<div class="menu_icon" id="work_div" data-information="work">
+			    			<a href="work.html"> 
+			    				<img src="icons/menu_icon_work select.png" class="icon_png clickable" id="work"></img>
+			    			</a>
+			    		</div>
+
+			    		<div class="menu_icon" id="resume_div" data-information="resume">
+			    			<a href="base files/odonnel_resume.pdf" download> 
+			    				<img src="icons/menu_icon_resume.png" class="icon_png clickable" id="resume"></img>
+			    			</a>
+			    		</div>
+
+			    		<div class="menu_icon" id="process_div" data-information="process">
+			    			<a href="process.html"> 
+			    				<img src="icons/menu_icon_process.png" class="icon_png clickable" id="process"></img>
+			    			</a>
+			    		</div>
+
+			    		<div class="menu_icon" id="contact_div" data-information="contact">
+			    			<a href="contact.html"> 
+			    				<img src="icons/menu_icon_contact.png" class="icon_png clickable" id="contact"></img>
+			    			</a>
+			    		</div>
+
+			    		<div class="menu_icon" id="about_div" data-information="about" >
+			    			<a href="about.html"> 
+			    				<img src="icons/menu_icon_about.png" class="icon_png clickable" id="about" ></img>
+			    			</a>
+			    		</div>
+			    </div>
+
+			    <div class="stack0 s0-1" id="c0-s01">
+	    		
+					<div class='placeholder'>
+			 			<div class="menu_under menu_selected" id="mu_work" data-information="work">
+			 				<h4>Selected Works</h4>
+			 			</div>
+		 			</div>
+		 			<div class='placeholder'>
+			    		<div class="menu_under menu_unselected" id="mu_resume" data-information="resume">
+			    			<h4>R&Eacute;sum&Eacute; Download</h4> 
+			    		</div>
+		    		</div>
+		 			<div class='placeholder'>
+			    		<div class="menu_under menu_unselected" id="mu_process" data-information="process">
+			    			<h4>Process Journal</h4> 
+			    		</div>
+			    	</div>
+		 			<div class='placeholder'>
+			    		<div class="menu_under menu_unselected" id="mu_contact" data-information="contact">
+			    			<h4>Contact Information</h4> 
+			    		</div>
+			    	</div>
+		 			<div class='placeholder'>
+			    		<div class="menu_under menu_unselected" id="mu_about" data-information="about">
+			    			<h4>About Patrick</h4> 
+			    		</div>
+		    		</div>
+	    		</div> 
+
+    	</div>
+    	<div class="columns col1" id="r1-c1">
+
+    			<div class="stack0 s0-0" id="c1-s00">
+    					<h2 class="clickable additive-titles" id="page_title"  data-filter="all"></h2>
+    					<h3 class="clickable additive-titles" id='filter_title'></h3>
+    			</div>
+
+	    		
+		</div>
+    	
+    </div>
+
+
+
+
+<!-- CONTENT -->
+    <div class="rows row2" id="content">
+
+    	<div class="columns col1 filtr-container" id="r2-c1">
+
+    			<!-- Filter Categories
+
+				    DESIGN TYPE
+				    1 Art
+				    2 Experience Design
+				    3 Graphic Design
+				    4 Interactive Design
+				    5 Visual Performance
+
+				    MEDIUM
+				    11 performance
+				    12 print
+				    13 sculpture
+				    14 video
+				    15 web
+				    16 presentation/lecture
+				    17 new media
+
+				    KIND
+				    21 data visualization
+				    22 information graphics
+				    23 visual storytelling
+				    24 typography
+
+				    LANGUAGE/LIBRARIES
+				    31 d3
+				    32 jQuery
+				    33 Processing
+				    34 qGIS
+
+				    INCLUDES
+				    41 research and practices
+				    42 design theory
+				    43 process
+				    44 prototype 
+
+				-->
+	    	
+	    	<!-- blueprint for projects -->
+	    	<!--
+	    	<div class="project filtr-item" data-category="" data-date="" data-access="" id="">
+
+					<div class="project_title">
+						<h5 class="clickable"></h5>
+					</div>
+
+					<div class="thumbnail">
+						<div class="desc" id="desc____">
+							<span> 
+					    		<div class="date_sort" title="sort by date">
+					    			<p class="clickable desc_date"></p>
+					    		</div>
+
+					    		<ul class="tag_ul">
+		    						<li> 
+		    							<div class="justify_filters"> 
+		    								<p class="clickable desc_tags" data-multifilter=""></p> 
+		    							</div></li>
+	    						</ul>
+					    	</span>
+						</div>
+					
+					</div> <! end thumbnail
+
+			</div> <! end project 
+			-->
+
+			<!-- POCKET INDIA -->
+			<div class="project filtr-item" data-category="3,4,12,22,23,14,41,43" data-date="17i" data-access="0026" id="pocket">
+
+					<div class="project_title">
+						<h5 class="clickable">Pocket India</h5>
+					</div>
+
+					<div class="thumbnail">
+						<div class="desc" id="desc0026">
+							<span> 
+					    		<div class="date_sort" title="sort by date">
+					    			<p class="clickable desc_date">Sept 2017</p>
+					    		</div>
+
+					    		<ul class="tag_ul">
+		    						
+	    						</ul>
+					    	</span>
+						</div>
+					
+					</div> 
+
+			</div> <!-- end project -->
+
+			<!-- LOW RES MEDIA FACADE -->
+			<div class="project filtr-item" data-category="1,2,17,21,22,33,14,43" data-date="17c" data-access="0025" id="facade">
+
+					<div class="project_title">
+						<h5 class="clickable">Designing for a Low-Res Media Fa&#231;ade</h5>
+					</div>
+
+					<div class="thumbnail">
+						<div class="desc" id="desc0025">
+							<span> 
+					    		<div class="date_sort" title="sort by date">
+					    			<p class="clickable desc_date">Mar 2017</p>
+					    		</div>
+
+					    		<ul class="tag_ul">
+		    					
+	    						</ul>
+					    	</span>
+						</div>
+					
+					</div> 
+
+			</div> <!-- end project -->
+
+			<!-- Programming Basics Lecture(s) -->
+			<div class="project filtr-item" data-category="16,21,22,33,41,42" data-date="16b" data-access="0024" id="pgbasics">
+
+					<div class="project_title">
+						<h5 class="clickable">Lectures: Programming Basics</h5>
+					</div>
+
+					<div class="thumbnail">
+						<div class="desc" id="desc0024">
+							<span> 
+					    		<div class="date_sort" title="sort by date">
+					    			<p class="clickable desc_date">Feb 2016</p>
+					    		</div>
+
+					    		<ul class="tag_ul">
+		    						
+	    						</ul>
+					    	</span>
+						</div>
+					
+					</div> 
+
+			</div> <!-- end project -->
+
+			<!-- ALICE ABOUT WONDERLAND -->
+	    	<div class="project filtr-item" data-category="4,15,31,32,44" data-date="17l" data-access="0027" id="alice">
+
+					<div class="project_title">
+						<h5 class="clickable">Alice about Wonderland</h5>
+					</div>
+
+					<div class="thumbnail">
+						<div class="desc" id="desc0027">
+							<span> 
+					    		<div class="date_sort" title="sort by date">
+					    			<p class="clickable desc_date">Dec 2017</p>
+					    		</div>
+
+					    		<ul class="tag_ul">
+		    						
+	    						</ul>
+					    	</span>
+						</div>
+					
+					</div> 
+
+			</div> <!-- end project -->
+
+			<!-- MED BILL CHALLENGE -->
+			<div class="project filtr-item" data-category="41, 2, 3, 43, 12, 14" data-date="16h" data-access="0018" id="medbill">
+
+				<div class="project_title" >
+    					<h5 class="clickable">A Bill You Can Understand</h5>
+    			</div>
+
+    			<div class="thumbnail">
+
+    				<div class="desc" id="desc0018">
+
+    					<span>
+    						<div class="date_sort" title="sort by date">
+    							<p class="clickable desc_date">Aug 2016</p>
+    						</div>
+
+    						<ul class="tag_ul">
+	    						
+    						</ul>
+			    		</span>
+
+					</div>
+
+    			</div> <!-- end thumbnail -->
+
+			</div> <!-- end project -->
+
+			<!-- STOP AND FRISK: BOSTON -->
+			<div class="project filtr-item" data-category="31, 21, 4, 43, 34, 14, 15" data-date="16l" data-access="0000" id="fio">
+
+					<div class="project_title">
+						<h5 class="clickable">Stop and Frisk: Boston</h5>
+					</div>
+
+					<div class="thumbnail">
+						<div class="desc" id="desc0000">
+							<span> 
+					    		<div class="date_sort" title="sort by date">
+					    			<p class="clickable desc_date">Dec 2016</p>
+					    		</div>
+
+					    		<ul class="tag_ul">
+		    						
+	    						</ul>
+				    		</span>
+						</div>
+					
+					</div> <!-- end thumbnail -->
+
+			</div> <!-- end project -->
+
+			<!-- AFFINITY DIAGRAMMING -->
+			<div class="project filtr-item" data-category="41, 2, 3, 12, 43" data-date="16k" data-access="0003" id="affinity-edit">
+
+					<div class="project_title">
+						<h5 class="clickable">Affinity Diagramming: Pedestrians at Crosswalks</h5>
+					</div>
+
+					<div class="thumbnail">
+						<div class="desc" id="desc0003">
+							<span> 
+					    		<div class="date_sort" title="sort by date">
+					    			<p class="clickable desc_date">Nov 2016</p>
+					    		</div>
+
+					    		<ul class="tag_ul">
+		    						
+	    						</ul>
+					    	</span>
+						</div>
+					
+					</div> <!-- end thumbnail -->
+
+			</div> <!-- end project -->
+
+	    </div> <!-- end .filtr-container -->
+	   
+    </div> <!-- end #content -->
+	
+<!-- SCRIPTS -->
+<script type="text/javascript" src="./js/splash.js"></script>
+<script type="text/javascript" src="./js/menu.js"></script>
+<script type="text/javascript" src="js/photomatrix.js"></script>
+<script type="text/javascript" src="js/sort-and-filterizr.js"></script>	
+
+</body>
+</html>
