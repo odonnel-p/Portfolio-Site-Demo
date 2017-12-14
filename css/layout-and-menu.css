@@ -1,0 +1,256 @@
+* {
+	cursor: default;
+}
+
+
+
+/*COLORS*/
+/*Resume Blue #4c254d; Highlight Blue #964997*/
+
+body {
+	/*background-color: #ffeedd;*/
+	background-color: #fff;
+	color: #4c254d;
+		margin: 18px;
+		min-width: 900px; max-width: 100%;
+	overflow-x: hidden;
+}
+
+		.scroll::-webkit-scrollbar-track { background:transparent; }
+		.scroll::-webkit-scrollbar { width: 12px;}
+		.scroll::-webkit-scrollbar-thumb { background-color: #4c254d !important; border-right: 4px solid #fff;   }
+
+.rows {
+	/*background-color: #fff;*/
+	/*background-color: #e7dbdf;*/
+
+	width: 100%;
+	margin-bottom: 12px;
+}
+
+.rows#header {
+	height: 35px;
+
+	padding-top: 90px;
+	
+}
+
+.rows#navtitle {
+	height: 54px;
+}
+
+.rows#content {
+	height:1400px;
+}
+
+
+		.columns {
+			position: relative;
+			float:left;
+
+			height: 100%;
+
+			margin-right: 8px;
+
+		}
+
+		.col0 {
+			/*background-color: #fff;*/
+			/*background-color: #fc9dce;*/
+
+			width: 44%;
+
+		}
+
+				/*line to title*/
+				#blue_border {
+					float: right;
+
+					width: calc(100% + 20px);
+					height: calc(100% - 8px);
+
+					border-bottom: 8px solid #4c254d;
+				}
+
+				.stack0 {
+					/*background-color: #ffefaf;*/
+					float: right;
+
+					width: 100%;
+					height: calc( (100% - 8px)*.5 );
+				}
+
+				.stack0.s0-0 {
+					padding-bottom: 8px;
+				}
+
+				.menu_icon {
+					background-color: #fff;
+					position:relative;
+					float:right;
+
+					height: 24px;
+					padding-left: 8px;
+				}
+
+				.menu_icon * {
+					float: right;
+					text-decoration: none;
+				}
+
+				.menu_icon img {
+					width: 22.6px;
+				}
+
+
+						.placeholder {
+							width: 22.6px;
+							height: 24px;
+							margin-left: 8px;
+							float:right;
+						}
+
+						.menu_under {
+							opacity: 0;
+							width: 300px;
+							height: 100%;
+							float: right;
+							/*margin-left: 8px;*/
+							/*border-top: 4px solid #4c254d;*/
+						}
+
+
+
+
+
+
+		.col1 {
+			background-color: #fff;
+			/*background-color: #fc9dce;*/
+
+			width: 50%; max-width: 800px;
+			margin-top: 2px;
+		}
+
+				.additive-titles {
+					position: relative;
+					float: left;
+				}
+
+				#content > .col1 {
+					/*background-color: rgba(252,252,240,50);*/
+					margin-left: calc(44% + 8px);
+				} 
+
+
+
+/*TEXT*/
+
+h1,h2,h3,h4,h5,h6,p {
+	margin:0;
+	padding:0;
+	color: #4c254d;
+	line-height: 18px;
+}
+
+	/*PATRICK J. O'DONNEL*/
+	h1 {
+		font-family: 'Fira Sans Condensed', Sans-Serif;
+		font-weight: 700;
+		text-transform: uppercase;
+
+		font-size: 48px;
+		line-height: 35px;
+		letter-spacing: 1.5px;
+	}
+
+				h1 a {
+					height:35px;
+				}
+
+	/*PAGE THAT WE ARE ON*/
+	h2 {
+		font-family: 'Fira Sans Condensed', Sans-Serif;
+		font-weight: 700;
+		text-transform: uppercase;
+
+		font-size: 28px;
+		line-height: 23px;
+		letter-spacing: .5px;
+
+	}
+
+	/*QUALIFIER FOR PAGE WE ARE ON*/
+	h3 {
+		font-family: 'Fira Sans Condensed', Sans-Serif;
+		font-weight: 200;
+		text-transform: uppercase;
+
+		font-size: 28px;
+		line-height: 23px;
+		letter-spacing: .2px;
+	}
+
+	/*MENUS*/
+	h4 {
+		font-family: 'Fira Sans Condensed', Sans-Serif;
+		font-weight: 200;
+		text-transform: uppercase;
+
+		font-size: 20px;
+		line-height: 24px;
+		color: #964997;
+
+		text-align: right;
+	}
+
+	
+
+	p {
+		font-family: 'Libre Baskerville', Serif;
+		font-weight: 400;
+
+		font-size: 16px;
+		line-height: 18px;
+	}
+
+	a {
+		text-decoration: none;
+		cursor: pointer;
+		color: #4c254d;
+	}
+
+			p a {
+				font-family: 'Fira Sans Condensed', Sans-Serif;
+				font-weight: 700;
+
+				font-size: 14px;
+				line-height: 18px;
+				letter-spacing: .5px;
+			}
+
+			.clickable:hover, a:hover {
+				color: #964997;
+			}
+
+
+/*POINTER*/
+.clickable {
+	cursor: pointer;
+}
+
+/*AJAX LOADING*/
+#load {
+    display: none;
+    position: absolute;
+
+    right: 10px;
+    top: 10px;
+	width: 43px;
+    height: 11px;
+
+    background: url(./icons/Rolling.gif);
+    
+    text-indent: -9999em;
+
+}
