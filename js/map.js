@@ -120,6 +120,7 @@ color.domain([0,1]);
 			//
 			// SHOW TOOLTIP
 			.on("mouseover", function() {
+				// console.log("show");
 				div.transition()        
 		      	   .duration(200)      
 		           .style("opacity", .9);  
@@ -135,8 +136,12 @@ color.domain([0,1]);
 		           		if (d.current=="true") { return "Current: "+ d.place; }
 		           		else { return  d.place+", "+d.years+" year"+plural; }
 		           	})
-		           .style("left", (d3.event.pageX + 4) + "px")     
-		           .style("top", (d3.event.pageY - 28) + "px");  
+		           .style("top", 0+"px")
+		           .style("left", 0+"px")  
+		    })
+
+		    .on("click", function() {
+		    	console.log( "("+d3.event.pageX+", "+d3.event.pageY+")" );
 		    })   
 
 		    //

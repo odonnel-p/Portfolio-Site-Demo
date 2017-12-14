@@ -1,0 +1,102 @@
+.content_text {
+	width: 45%; min-width: 500px; max-width: 700px;
+}
+
+#content p {
+	font-family: 'Libre Baskerville', Serif;
+	font-weight: 400;
+
+	font-size: 16px;
+	line-height: 24px;
+
+	margin-bottom: 15px;
+}
+
+#content p a {
+	font-family: 'Fira Sans Condensed', Sans-Serif;
+	font-weight: 700;
+
+	
+	line-height: 24px;
+	letter-spacing: .5px;
+}
+
+#content .italics {
+	font-style: italic;
+}
+
+#content .bold {
+	font-family: 'Fira Sans Condensed', Sans-Serif;
+	font-weight: 700;
+
+	font-size: 17px;
+	line-height: 24px;
+	letter-spacing: .5px;
+}
+
+#content .blue_left {
+	border-left: 8px solid #4c254d;
+	padding-left: 12px;
+	
+	margin-bottom: 15px;
+
+	position: relative;
+}
+
+#content ul { 
+	padding: 0;
+	margin: 0; 
+	list-style: none;
+}
+
+#content li {
+	font-family: 'Fira Sans Condensed', Serif;
+	font-weight: 400;
+
+	font-size: 17px;
+	line-height: 24px;
+
+	/*margin-bottom: 15px;*/
+}
+
+#content h5 {
+	font-family: 'Fira Sans Condensed', Serif;
+	font-weight: 300;
+
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: .5px;
+	margin-top: 36px; margin-bottom: 15px;
+}
+
+#content .icon_button {
+	position:relative;
+	float:left;
+
+	width: 30.1px;
+	height: 32px;
+	padding-top: 8px; padding-bottom: 8px;
+	margin-right: 12px;
+}
+
+	#content .icon_blue_left {
+		height: 48px;
+	}
+
+#contact_button, #resume_button, #process_button, #prototype_button {
+	width: 30.1px;
+	height: 32px;
+	
+}
+
+#content .inline_icon {
+	position:relative;
+	float:left;
+
+	margin: 0; padding: 0;
+	padding-top: 10px;
+	width: 250px;
+
+	text-transform: uppercase;
+
+}

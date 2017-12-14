@@ -51,10 +51,10 @@ body {
 
 .rows#content {
 	position: absolute;
-	top:209px;
+	top:210px;
 	z-index: -1;
 
-	height:1400px;
+	height:1100px;
 }
 
 
@@ -94,10 +94,15 @@ body {
 					height: calc( (100% - 8px)*.5 );
 				}
 
-				.stack0.s0-0 {
+				.stack0#c1-s00 {
 					background-color: white;
-					padding-bottom: 8px;
+					padding-bottom: 22px;
 				}
+
+					.stack0#c0-s00 {
+						background-color: white;
+						padding-bottom: 9px;
+					}
 
 				.menu_icon {
 					background-color: #fff;
@@ -136,11 +141,11 @@ body {
 
 				.s0-1 {
 					height:1px;
-					padding-bottom: 46px;
+					padding-bottom: 30px;
 				}
 
 				.fader {
-					background: linear-gradient(rgba(255,255,255,1.1), rgba(255,255,255,.9), rgba(255,255,255, .5), rgba(255,255,255,0.05) );
+					background: linear-gradient(rgba(255,255,255,1.1), rgba(255,255,255,.9), rgba(255,255,255,.6), rgba(255,255,255,0.01) );
 					/*background: linear-gradient( rgba(255,255,255,1), rgba(255,255,255,0);*/
 				}
 
@@ -149,7 +154,7 @@ body {
 			/*background-color: #fff;*/
 			/*background-color: #fc9dce;*/
 
-			width: 50%; max-width: 800px;
+			width: 50%; min-width: 600px; max-width: 700px;
 			margin-top: 2px;
 		}
 
@@ -224,15 +229,6 @@ h1,h2,h3,h4,h5,h6,p {
 		text-align: right;
 	}
 
-	
-
-	p {
-		font-family: 'Libre Baskerville', Serif;
-		font-weight: 400;
-
-		font-size: 16px;
-		line-height: 18px;
-	}
 
 	a {
 		text-decoration: none;

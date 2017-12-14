@@ -9,6 +9,7 @@
     
     <!-- FOR MENU & ICONS -->
     <link rel="stylesheet" href="./css/layout-and-menu.css"/>
+    <link rel="stylesheet" href="./css/sub-pages.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- FOR MAP -->
@@ -41,7 +42,7 @@
 	    		<div class="stack0 s0-0" id="c0-s00">
 			    		<div class="menu_icon" id="work_div" data-information="work">
 			    			<a href="work.html"> 
-			    				<img src="icons/menu_icon_work select.png" class="icon_png clickable" id="work"></img>
+			    				<img src="icons/menu_icon_work.png" class="icon_png clickable" id="work"></img>
 			    			</a>
 			    		</div>
 
@@ -59,7 +60,7 @@
 
 			    		<div class="menu_icon" id="contact_div" data-information="contact">
 			    			<a href="contact.html"> 
-			    				<img src="icons/menu_icon_contact.png" class="icon_png clickable" id="contact"></img>
+			    				<img src="icons/menu_icon_contact select.png" class="icon_png clickable" id="contact"></img>
 			    			</a>
 			    		</div>
 
@@ -74,7 +75,7 @@
 			    <div class="stack0 s0-1" id="c0-s01">
 	    		
 					<div class='placeholder'>
-			 			<div class="menu_under menu_selected" id="mu_work" data-information="work">
+			 			<div class="menu_under menu_unselected" id="mu_work" data-information="work">
 			 				<h4>Selected Works</h4>
 			 			</div>
 		 			</div>
@@ -89,7 +90,7 @@
 			    		</div>
 			    	</div>
 		 			<div class='placeholder'>
-			    		<div class="menu_under menu_unselected" id="mu_contact" data-information="contact">
+			    		<div class="menu_under menu_selected" id="mu_contact" data-information="contact">
 			    			<h4>Contact Information</h4> 
 			    		</div>
 			    	</div>
@@ -125,19 +126,29 @@
 
 		    		
 					<!-- <h6 class="no_marg">Email, preferred contact</h6> -->
-					<p class="non-break">For all inquiries, please use the following email:</p>
-					<p><a class="copy" title="select email address"value="p.j.odonnel@gmail.com">p.j.odonnel@gmail.com</a></p>
+					<p class="non-break">For all inquiries, please use the following email</p>
+					
+					<div class="blue_left icon_blue_left" data-information="contact">
+						<div class="icon_button" data-information="contact">
+		    				
+		    					<img src="icons/menu_icon_contact.png" class="icon_svg clickable" id="contact_button"></img>
+		  
+		    			</div>
+
+		    			<h5 class="inline_icon" id="contact_button_title" title="copy email to clipboard">P.J.ODonnel@gmail.com</h5>
+		    			
+					</div>
 
 					<p>For summary of professional work, please use the following:</p>
 					
 					<div class="blue_left icon_blue_left" data-information="resume">
 						<div class="icon_button" data-information="resume">
 		    				<a href="base files/odonnel_resume.pdf" download> 
-		    					<img src="icons/menu_icon_resume.svg" class="icon_svg clickable" id="resume_button"></img>
+		    					<img src="icons/menu_icon_resume.png" class="icon_svg clickable" id="resume_button"></img>
 		    				</a>
 		    			</div>
 		    			<a href="base files/odonnel_resume.pdf" download> 
-		    				<h6 class="inline_icon" id="resume_buttontitle" title="download pdf resume">Download Resume</h6>
+		    				<h5 class="inline_icon" id="resume_buttontitle" title="download pdf resume">Download Resume</h5>
 		    			</a>
 					</div>
 					

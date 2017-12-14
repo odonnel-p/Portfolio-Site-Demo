@@ -1,7 +1,3 @@
-
-
-
-
 /* Style for Custom Tooltip */
 div .tooltip {   
  	position: absolute;           
@@ -16,7 +12,9 @@ div .tooltip {
 	border: 1px solid #4c254d;      
 	border-radius: 4px;           
 	pointer-events: none;
-	font-weight: 300;         
+	font-weight: 300;   
+
+	opacity: 0;      
 }
         
 /* Legend Font Style */
