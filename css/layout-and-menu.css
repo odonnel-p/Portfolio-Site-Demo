@@ -9,7 +9,7 @@
 
 body {
 	/*background-color: #ffeedd;*/
-	background-color: #fff;
+	/*background-color: #fff;*/
 	color: #4c254d;
 		margin: 18px;
 		min-width: 900px; max-width: 100%;
@@ -21,25 +21,39 @@ body {
 		.scroll::-webkit-scrollbar-thumb { background-color: #4c254d !important; border-right: 4px solid #fff;   }
 
 .rows {
-	/*background-color: #fff;*/
 	/*background-color: #e7dbdf;*/
 
 	width: 100%;
-	margin-bottom: 12px;
+	margin-bottom: 16px;
 }
 
 .rows#header {
-	height: 35px;
+	position: fixed;
+	top:0px;
+	z-index: 998;
 
+	height: 35px;
 	padding-top: 90px;
-	
+	padding-bottom: 40px;
+
+	background-color: #fff;
 }
 
 .rows#navtitle {
+	position: fixed;
+	top:122px;
+	z-index: 999;
+
 	height: 54px;
+	padding-top: 18px;
+	margin-bottom: 0px;
 }
 
 .rows#content {
+	position: absolute;
+	top:209px;
+	z-index: -1;
+
 	height:1400px;
 }
 
@@ -50,7 +64,7 @@ body {
 
 			height: 100%;
 
-			margin-right: 8px;
+			margin-right: 9px;
 
 		}
 
@@ -81,6 +95,7 @@ body {
 				}
 
 				.stack0.s0-0 {
+					background-color: white;
 					padding-bottom: 8px;
 				}
 
@@ -119,13 +134,19 @@ body {
 							/*border-top: 4px solid #4c254d;*/
 						}
 
+				.s0-1 {
+					height:1px;
+					padding-bottom: 46px;
+				}
 
-
-
+				.fader {
+					background: linear-gradient(rgba(255,255,255,1.1), rgba(255,255,255,.9), rgba(255,255,255, .5), rgba(255,255,255,0.05) );
+					/*background: linear-gradient( rgba(255,255,255,1), rgba(255,255,255,0);*/
+				}
 
 
 		.col1 {
-			background-color: #fff;
+			/*background-color: #fff;*/
 			/*background-color: #fc9dce;*/
 
 			width: 50%; max-width: 800px;
@@ -139,9 +160,8 @@ body {
 
 				#content > .col1 {
 					/*background-color: rgba(252,252,240,50);*/
-					margin-left: calc(44% + 8px);
+					margin-left: calc(44% + 9px);
 				} 
-
 
 
 /*TEXT*/
@@ -171,7 +191,7 @@ h1,h2,h3,h4,h5,h6,p {
 	/*PAGE THAT WE ARE ON*/
 	h2 {
 		font-family: 'Fira Sans Condensed', Sans-Serif;
-		font-weight: 700;
+		font-weight: 400;
 		text-transform: uppercase;
 
 		font-size: 28px;
@@ -183,7 +203,7 @@ h1,h2,h3,h4,h5,h6,p {
 	/*QUALIFIER FOR PAGE WE ARE ON*/
 	h3 {
 		font-family: 'Fira Sans Condensed', Sans-Serif;
-		font-weight: 200;
+		font-weight: 300;
 		text-transform: uppercase;
 
 		font-size: 28px;
@@ -194,7 +214,7 @@ h1,h2,h3,h4,h5,h6,p {
 	/*MENUS*/
 	h4 {
 		font-family: 'Fira Sans Condensed', Sans-Serif;
-		font-weight: 200;
+		font-weight: 300;
 		text-transform: uppercase;
 
 		font-size: 20px;

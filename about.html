@@ -5,7 +5,7 @@
     <meta name="description" content="Patrick J. O'Donnel | About Patrick"/>
     <link rel="shortcut icon" href="icons/favicon_resume_blue.ico" type="image/x-icon">
 
-     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:200,400,700|Libre+Baskerville:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,500,700|Libre+Baskerville:400,400i" rel="stylesheet">
     
     <!-- FOR MENU & ICONS -->
     <link rel="stylesheet" href="./css/layout-and-menu.css"/>
@@ -21,7 +21,7 @@
 </head>
 <body class="scroll">
 
-    <!-- HEADER -->
+	<!-- HEADER -->
     <div class="rows row0" id="header">
     	
 	    	<div class="columns col0" id="r0-c0">
@@ -29,7 +29,7 @@
 	    	</div>
 
 	    	<div class="columns col1" id="r0-c1">	
-	    			<h1 class><a href="work.html">Patrick J. O'Donnel</a></h1>
+	    			<h1><a href="work.html">Patrick J. O'Donnel</a></h1>
 	    	</div>
     	
     </div>
@@ -41,11 +41,11 @@
     <div class="rows row1" id="navtitle">
     	<div class="columns col0" id="r1-c0">
 
-	    		<!-- ICONS -->
+    			<!-- ICONS -->
 	    		<div class="stack0 s0-0" id="c0-s00">
 			    		<div class="menu_icon" id="work_div" data-information="work">
 			    			<a href="work.html"> 
-			    				<img src="icons/menu_icon_work.png" class="icon_png clickable" id="work"></img>
+			    				<img src="icons/menu_icon_work select.png" class="icon_png clickable" id="work"></img>
 			    			</a>
 			    		</div>
 
@@ -69,15 +69,16 @@
 
 			    		<div class="menu_icon" id="about_div" data-information="about" >
 			    			<a href="about.html"> 
-			    				<img src="icons/menu_icon_about select.png" class="icon_png clickable" id="about" ></img>
+			    				<img src="icons/menu_icon_about.png" class="icon_png clickable" id="about" ></img>
 			    			</a>
 			    		</div>
 			    </div>
 
+			    <!-- PLACEHOLDERS FOR MENU TITLES -->
 			    <div class="stack0 s0-1" id="c0-s01">
 	    		
 					<div class='placeholder'>
-			 			<div class="menu_under menu_unselected" id="mu_work" data-information="work">
+			 			<div class="menu_under menu_selected" id="mu_work" data-information="work">
 			 				<h4>Selected Works</h4>
 			 			</div>
 		 			</div>
@@ -97,24 +98,30 @@
 			    		</div>
 			    	</div>
 		 			<div class='placeholder'>
-			    		<div class="menu_under menu_selected" id="mu_about" data-information="about">
+			    		<div class="menu_under menu_unselected" id="mu_about" data-information="about">
 			    			<h4>About Patrick</h4> 
 			    		</div>
 		    		</div>
 	    		</div> 
 
     	</div>
+
     	<div class="columns col1" id="r1-c1">
 
+    			<!-- CURRENT PAGE TITLES -->
     			<div class="stack0 s0-0" id="c1-s00">
     					<h2 class="clickable additive-titles" id="page_title"  data-filter="all"></h2>
     					<h3 class="clickable additive-titles" id='filter_title'></h3>
     			</div>
 
-	    		
+    			<!-- fader -->
+    			<div class="stack0 s0-1 fader" id="c1-s01">
+    			</div>
+	
 		</div>
     	
     </div>
+
 
     
 
