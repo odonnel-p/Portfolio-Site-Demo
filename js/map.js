@@ -12,13 +12,13 @@ http://bl.ocks.org/mbostock/3888852  */
 
 		
 //Width and height of map
-var width = 480;
-var height = 310;
+var width = 610;
+var height = 372;
 
 // D3 Projection
 var projection = d3.geo.albersUsa()
 				   .translate([width/2, height/2])    
-				   .scale([665]);          
+				   .scale([825]);          
         
 // Define path generator
 var path = d3.geo.path()               
@@ -44,11 +44,25 @@ var svg = d3.select(".map_boundary")
         
 //
 //
-// TOOLTIP
-var div = d3.select(".map_boundary")
-		    .append("div")   
-    		.attr("class", "tooltip")               
+// SVG FOR LEGEND
+var legend = d3.select(".map_boundary").append("svg")
+      			.attr("class", "legend")
+     			.attr("width", 140)
+    			.attr("height", 70)
+	   				.selectAll("g")
+	   				.data([1,2])
+	   				.enter()
+	   				.append("g")
+	     			.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+//
+//
+// DIV FOR TOOLTIP
+var div = d3.select(".tooltip")
+		    // .append("div")   
+    		// .attr("class", "tooltip")               
     		.style("opacity", 0);
+
 
 //
 //
@@ -93,6 +107,28 @@ color.domain([0,1]);
 
 			});
 
+		//
+	    //
+	    //LEGEND    
+		
+
+
+		  	legend.append("rect")
+		   		  .attr("width", 18)
+		   		  .attr("height", 18)
+		   		  .style("fill", function(d) { if (d==1) { return "rgb(76,37,77)"; }
+		   		  						  else if (d==2) { return "rgb(219,211,219)"; }
+		   		  						  else { console.log("failed"); }
+		   		  });
+
+		  	legend.append("text")
+		  		  .data(legendText)
+		  		  .attr("class", "legend_text")
+		      	  .attr("x", 24)
+		      	  .attr("y", -5)
+		      	  .attr("dy", "20px")
+		      	  .text(function(d) { return d; });
+
 			 
 		//
 		//
@@ -129,20 +165,23 @@ color.domain([0,1]);
 			//
 			//
 			// MOVE TOOLTIP
-			.on("mousemove", function(d) {           
-		           div.text( function() {
-		           		var plural = '';
-		           		if (d.years>1) { plural = "s";}
-		           		if (d.current=="true") { return "Current: "+ d.place; }
-		           		else { return  d.place+", "+d.years+" year"+plural; }
-		           	})
-		           .style("top", 0+"px")
-		           .style("left", 0+"px")  
+			.on("mousemove", function(d) {
+
+				var ttwidth = d3.select(".tooltip").node().getBoundingClientRect().width;
+	           	
+	           	div.text( function() {
+	           		var plural = '';
+	           		//if (d.years>1) { plural = "s";}
+	           		if (d.current=="true") { return d.place + " (current)" }
+	           		else { return  d.place; }
+	           	})
+	    		.style("left", d3.select(this).attr("cx") - (.5*ttwidth) + 2 + "px")     
+				.style("top", d3.select(this).attr("cy")-31 + "px");
+
+					
 		    })
 
-		    .on("click", function() {
-		    	console.log( "("+d3.event.pageX+", "+d3.event.pageY+")" );
-		    })   
+		      
 
 		    //
 		    //
@@ -154,35 +193,7 @@ color.domain([0,1]);
 		    });
 		}); 
 
-	    //
-	    //
-	    //LEGEND    
-		var legend = d3.select(".map_boundary").append("svg")
-		      			.attr("class", "legend")
-		     			.attr("width", 140)
-		    			.attr("height", 120)
-		   				.selectAll("g")
-		   				.data([1,2])
-		   				.enter()
-		   				.append("g")
-		     			.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-
-
-		  	legend.append("rect")
-		   		  .attr("width", 18)
-		   		  .attr("height", 18)
-		   		  .style("fill", function(d) { if (d==1) { return "rgb(76,37,77)"; }
-		   		  						  else if (d==2) { return "rgb(219,211,219)"; }
-		   		  						  else { console.log("failed"); }
-		   		  });
-
-		  	legend.append("text")
-		  		  .data(legendText)
-		  		  .attr("class", "legend_text")
-		      	  .attr("x", 24)
-		      	  .attr("y", -5)
-		      	  .attr("dy", "20px")
-		      	  .text(function(d) { return d; });
+	    
 	});
 
 });

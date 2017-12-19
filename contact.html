@@ -15,9 +15,9 @@
     <!-- FOR MAP -->
     <link rel="stylesheet" href="./css/map.css"/>
     <script src="http://d3js.org/d3.v3.min.js"></script>
-    
-
+   
 </head>
+
 <body class="scroll">
 
 	<!-- HEADER -->
@@ -122,51 +122,105 @@
 
     <!-- CONTENT -->
     <div class="rows row2" id="content">
-	    	<div class="columns col1 filtr-container" id="r2-c1">
+	    <div class="columns col1 filtr-container" id="r2-c1">
+			
 
-		    		
-					<!-- <h6 class="no_marg">Email, preferred contact</h6> -->
-					<p class="non-break">For all inquiries, please use the following email</p>
-					
-					<div class="blue_left icon_blue_left" data-information="contact">
-						<div class="icon_button" data-information="contact">
+			<div class="blue_left icon_blue_left clickable" data-information="contact">
+				<div class="icon_button clickable" data-information="contact">
 		    				
-		    					<img src="icons/menu_icon_contact.png" class="icon_svg clickable" id="contact_button"></img>
+		    		<img src="icons/menu_icon_contact.png" class="icon_svg clickable" id="contact_button"></img>
 		  
-		    			</div>
+		    	</div>
 
-		    			<h5 class="inline_icon" id="contact_button_title" title="copy email to clipboard">P.J.ODonnel@gmail.com</h5>
+		    	<h5 class="inline_icon clickable contact_button_title" id="contact_title" title="copy email to clipboard">P.J.ODonnel@gmail.com</h5>
 		    			
-					</div>
+			</div>
 
-					<p>For summary of professional work, please use the following:</p>
-					
-					<div class="blue_left icon_blue_left" data-information="resume">
-						<div class="icon_button" data-information="resume">
-		    				<a href="base files/odonnel_resume.pdf" download> 
-		    					<img src="icons/menu_icon_resume.png" class="icon_svg clickable" id="resume_button"></img>
-		    				</a>
+			<h5>External Media</h5>
+
+			<a href="https://pjodonnel.wordpress.com" class="clickable" target="_blank">
+					<div class="blue_left icon_blue_left clickable" data-information="process">
+						<div class="icon_button clickable" data-information="process" title="visit process journal"> 
+		    				<img src="icons/menu_icon_process.png" class="icon_svg clickable" id="process_button"></img>
 		    			</div>
-		    			<a href="base files/odonnel_resume.pdf" download> 
-		    				<h5 class="inline_icon" id="resume_buttontitle" title="download pdf resume">Download Resume</h5>
-		    			</a>
-					</div>
+		    			 
+		    			<h5 class="inline_icon clickable" id="process_buttontitle">Process Journal</h5>
+		    			
+			</div>
+			</a>
+
+			<a href="https://www.linkedin.com/in/pjodonnel" target="_blank">
+			<div class="blue_left icon_blue_left clickable" data-information="external">
+
+				<div class="icon_button clickable" data-information="external">
+		    				
+		    		<img src="icons/menu_icon_external.png" class="icon_svg clickable"></img>
+		  
+		    	</div>
+
+		    	<h5 class="inline_icon clickable">LinkedIn</h5>
+		    			
+			</div>
+			</a>
+
+			<a href="https://vimeo.com/user45445065" target="_blank">
+			<div class="blue_left icon_blue_left clickable" data-information="external">
+
+				<div class="icon_button clickable" data-information="external">
+		    				
+		    		<img src="icons/menu_icon_external.png" class="icon_svg clickable"></img>
+		  
+		    	</div>
+
+		    	<h5 class="inline_icon clickable">Vimeo</h5>
+		    			
+			</div>
+			</a>
+
+
+			<a href="https://github.com/odonnel-p" target="_blank">
+			<div class="blue_left icon_blue_left clickable" data-information="external">
+
+				<div class="icon_button clickable" data-information="external">
+		    				
+		    		<img src="icons/menu_icon_external.png" class="icon_svg clickable"></img>
+		  
+		    	</div>
+
+		    	<h5 class="inline_icon clickable">GitHub</h5>
+		    			
+			</div>
+			</a>
+
+			<a href="https://www.openprocessing.org/user/35819/" target="_blank">
+			<div class="blue_left icon_blue_left clickable" data-information="external">
+
+				<div class="icon_button clickable" data-information="external">
+		    				
+		    		<img src="icons/menu_icon_external.png" class="icon_svg clickable"></img>
+		  
+		    	</div>
+
+		    	<h5 class="inline_icon clickable">Open Processing</h5>
+		    			
+			</div>
+			</a> 
 					
-					<p>LinkedIn, user <a href="https://www.linkedin.com/in/pjodonnel" title="linkedIn profile">pjodonnel</a></p>
 
-					<h5>Locations</h5>
-					<div class="map_boundary"></div>
+			<h5>Living, Working, Traveling</h5>
+			
+			<div class="map_boundary">
+				<div class="tooltip" id="tooltip"></div>
+			</div>
 
-	    	</div>
+	    </div>
     </div>
 	
-<!-- SCRIPTS -->
-<script type="text/javascript" src="js/menu.js"></script>
-<script type="text/javascript" src="js/map.js"></script>
-<!-- <script type="text/javascript" src="js/photomatrix.js"></script>
-<script type="text/javascript" src="js/filterizer_.js"></script> -->
-
-	
-
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript" src="js/map.js"></script>
+	<script type="text/javascript" src="js/content_buttons.js"></script>
+	<!-- <script type="text/javascript" src="js/photomatrix.js"></script>
+	<script type="text/javascript" src="js/filterizer_.js"></script> -->
 </body>
 </html>

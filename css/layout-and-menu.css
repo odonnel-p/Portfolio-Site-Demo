@@ -12,7 +12,7 @@ body {
 	/*background-color: #fff;*/
 	color: #4c254d;
 		margin: 18px;
-		min-width: 900px; max-width: 100%;
+		min-width: 1200px; max-width: 100%;
 	overflow-x: hidden;
 }
 
@@ -23,7 +23,7 @@ body {
 .rows {
 	/*background-color: #e7dbdf;*/
 
-	width: 100%;
+	width: 100%; min-width: 1200px;
 	margin-bottom: 16px;
 }
 
@@ -54,7 +54,7 @@ body {
 	top:210px;
 	z-index: -1;
 
-	height:1100px;
+	height:900px;
 }
 
 

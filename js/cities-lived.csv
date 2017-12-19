@@ -1,5 +1,5 @@
 years,place,lat,lon,current
-2.5,Boston,42.309736,-71.115143,true
-18,Dayton,39.633067,-84.265437,false
-7,Columbus,40.015163,-83.003342,false
+2.5,Boston MA,42.309736,-71.115143,true
+18,Dayton OH,39.633067,-84.265437,false
+7,Columbus OH,40.015163,-83.003342,false
 1,Washington DC,38.901477,-76.993110,false

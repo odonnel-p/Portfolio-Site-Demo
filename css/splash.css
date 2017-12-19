@@ -1,0 +1,86 @@
+
+.slide {
+	left: -50%;
+}
+
+@keyframes slideA {
+	0% {
+		left: -50%;
+	}
+
+	100% {
+		left: 0;
+	}
+
+}
+
+	.slide {
+	  -webkit-animation: slideA 3s; 
+	  -moz-animation:    slideA 3s; 
+	  -o-animation:      slideA 3s; 
+	  animation:         slideA 3s;
+
+	  left: 0; 
+	}
+
+
+.appearA {
+	opacity: 0;
+}
+
+.appearB {
+	opacity: 0;
+}
+
+
+@keyframes appear {
+	0%, 50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes appears {
+	0%, 65% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+	.appearA {
+
+	opacity: 0;
+
+	  -webkit-animation: appear 4.5s; /* Safari 4+ */
+	  -moz-animation:    appear 4.5s; /* Fx 5+ */
+	  -o-animation:      appear 4.5s; /* Opera 12+ */
+	  animation:         appear 4.5s; /* IE 10+, Fx 29+ */
+	  
+	opacity: 1;
+
+	}
+
+	.appearB {
+
+	opacity: 0;
+
+	  -webkit-animation: appears 8s linear; /* Safari 4+ */
+	  -moz-animation:    appears 8s linear; /* Fx 5+ */
+	  -o-animation:      appears 8s linear; /* Opera 12+ */
+	  animation:         appears 8s linear; /* IE 10+, Fx 29+ */ 
+	  
+	opacity: 1;
+
+	}
+
+
+
+
