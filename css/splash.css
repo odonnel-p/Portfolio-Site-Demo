@@ -72,10 +72,10 @@
 
 	opacity: 0;
 
-	  -webkit-animation: appears 8s linear; /* Safari 4+ */
-	  -moz-animation:    appears 8s linear; /* Fx 5+ */
-	  -o-animation:      appears 8s linear; /* Opera 12+ */
-	  animation:         appears 8s linear; /* IE 10+, Fx 29+ */ 
+	  -webkit-animation: appears 7s linear; /* Safari 4+ */
+	  -moz-animation:    appears 7s linear; /* Fx 5+ */
+	  -o-animation:      appears 7s linear; /* Opera 12+ */
+	  animation:         appears 7s linear; /* IE 10+, Fx 29+ */ 
 	  
 	opacity: 1;
 
